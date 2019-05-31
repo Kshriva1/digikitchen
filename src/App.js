@@ -42,6 +42,9 @@ class App extends React.Component {
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
+               <NavItem>
+                <NavLink style={{cursor: 'pointer',paddingRight:'15px',textDecoration:'underline'}} onClick={() => this.onRouteChange('home')}>Sign Out</NavLink>
+              </NavItem>
               <NavItem>
                 <NavLink style={{cursor: 'pointer'}} onClick={() => this.onRouteChange('menu')}>Menu</NavLink>
               </NavItem>
@@ -58,6 +61,9 @@ class App extends React.Component {
     <div className='navigation pa3  bg-light-red' style={{height:'100px',width:'100px'}}>
         <img src={kitchenLogo} className="pointer App-logo" alt="logo" />
     </div>
+    </div>
+    <div className='selectMenu'> 
+    SELECT YOUR MENU
     </div>
     <Menu />
     </div>
