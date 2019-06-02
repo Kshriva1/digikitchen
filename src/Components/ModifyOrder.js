@@ -1,12 +1,12 @@
 import React from 'react';
-import './Menu.css'
+import './ModifyOrder.css';
 import { Table,Form,FormGroup,Label,Input,Button } from 'reactstrap';
 
-class Menu extends React.Component {
-   constructor(props) {
+class ModifyOrder extends React.Component {
+  constructor(props) {
     super(props);
     this.state = {
-    	orderConfirmation: false
+    	modifiedOrder: false
     }
    }
    render() {
@@ -22,8 +22,8 @@ class Menu extends React.Component {
             <th>#</th>
             <th>Drink</th>
             <th>Quantity</th>
-            <th>Click to Order</th>
-            <th>Order Status</th>
+            <th>Modify Order</th>
+            <th>Status</th>
           </tr>
         </thead>
         <tbody>
@@ -44,8 +44,8 @@ class Menu extends React.Component {
                   </FormGroup>
                 </Form>  
             </td>
-            <td><Button color="success">Order</Button></td>
-            <td style={{color:'orange'}}>Confirmed</td>
+            <td><Button color="warning">Modify</Button></td>
+            <td style={{color:'yellow'}}>Modified</td>
           </tr>
           <tr>
             <th scope="row">2</th>
@@ -64,8 +64,8 @@ class Menu extends React.Component {
                   </FormGroup>
                 </Form>  
             </td>
-            <td><Button color="success">Order</Button></td>
-            <td style={{color:'orange'}}>Confirmed</td>
+            <td><Button color="warning">Modify</Button></td>
+            <td style={{color:'yellow'}}>Modified</td>
           </tr>
           <tr>
             <th scope="row">3</th>
@@ -84,8 +84,8 @@ class Menu extends React.Component {
                   </FormGroup>
                 </Form>  
             </td>
-            <td><Button color="success">Order</Button></td>
-            <td style={{color:'orange'}}>Confirmed</td>
+            <td><Button color="warning">Modify</Button></td>
+            <td style={{color:'yellow'}}>Modified</td>
           </tr>
           <tr>
             <th scope="row">4</th>
@@ -104,8 +104,8 @@ class Menu extends React.Component {
                   </FormGroup>
                 </Form>  
             </td>
-            <td><Button color="success">Order</Button></td>
-            <td style={{color:'orange'}}>Confirmed</td>
+            <td><Button color="warning">Modify</Button></td>
+            <td style={{color:'yellow'}}>Modified</td>
           </tr>
           <tr>
             <th scope="row">5</th>
@@ -124,8 +124,8 @@ class Menu extends React.Component {
                   </FormGroup>
                 </Form>  
             </td>
-            <td><Button color="success">Order</Button></td>
-            <td style={{color:'orange'}}>Confirmed</td>
+            <td><Button color="warning">Modify</Button></td>
+            <td style={{color:'yellow'}}>Modified</td>
           </tr>
         </tbody>
       </Table>
@@ -140,8 +140,8 @@ class Menu extends React.Component {
             <th>#</th>
             <th>Food</th>
             <th>Quantity</th>
-            <th>Click to Order</th>
-            <th>Order Status</th>
+            <th>Modify Order</th>
+            <th>Status</th>
           </tr>
         </thead>
         <tbody>
@@ -162,8 +162,8 @@ class Menu extends React.Component {
                   </FormGroup>
                 </Form>  
             </td>
-            <td><Button color="success">Order</Button></td>
-            <td style={{color:'orange'}}>Confirmed</td>
+            <td><Button color="warning">Modify</Button></td>
+            <td style={{color:'yellow'}}>Modified</td>
           </tr>
           <tr>
             <th scope="row">2</th>
@@ -182,8 +182,8 @@ class Menu extends React.Component {
                   </FormGroup>
                 </Form>  
             </td>
-            <td><Button color="success">Order</Button></td>
-            <td style={{color:'orange'}}>Confirmed</td>
+            <td><Button color="warning">Modify</Button></td>
+            <td style={{color:'yellow'}}>Modified</td>
           </tr>
           <tr>
             <th scope="row">3</th>
@@ -202,8 +202,8 @@ class Menu extends React.Component {
                   </FormGroup>
                 </Form>  
             </td>
-            <td><Button color="success">Order</Button></td>
-            <td style={{color:'orange'}}>Confirmed</td>
+            <td><Button color="warning">Modify</Button></td>
+            <td style={{color:'yellow'}}>Modified</td>
           </tr>
           <tr>
             <th scope="row">4</th>
@@ -222,8 +222,8 @@ class Menu extends React.Component {
                   </FormGroup>
                 </Form>  
             </td>
-            <td><Button color="success">Order</Button></td>
-            <td style={{color:'orange'}}>Confirmed</td>
+            <td><Button color="warning">Modify</Button></td>
+            <td style={{color:'yellow'}}>Modified</td>
           </tr>
           <tr>
             <th scope="row">5</th>
@@ -242,8 +242,8 @@ class Menu extends React.Component {
                   </FormGroup>
                 </Form>  
             </td>
-            <td><Button color="success">Order</Button></td>
-            <td style={{color:'orange'}}>Confirmed</td>
+            <td><Button color="warning">Modify</Button></td>
+            <td style={{color:'yellow'}}>Modified</td>
           </tr>
         </tbody>
       </Table>
@@ -252,5 +252,6 @@ class Menu extends React.Component {
     );
   }
 }
+	
 
-export default Menu;
+export default ModifyOrder;

@@ -1,0 +1,12 @@
+.selectItem {
+   font-family:cursive;
+   color:black;
+   font-size:150%;	
+   padding-left: 14px;
+}
+
+#test-table-xls-button{
+   display:flex;
+   align-items:center;
+   justify-content:center;
+}

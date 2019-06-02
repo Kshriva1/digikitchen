@@ -1,7 +1,9 @@
 import React from 'react';
 import kitchenLogo from './kitchenLogo.jpg';
 import './App.css';
-import Menu from './Components/Menu'
+import Menu from './Components/Menu';
+import ModifyOrder from './Components/ModifyOrder';
+import Kitchen from './Components/Kitchen';
 import {
   Collapse,
   Navbar,
@@ -62,10 +64,26 @@ class App extends React.Component {
         <img src={kitchenLogo} className="pointer App-logo" alt="logo" />
     </div>
     </div>
+    {this.state.route==='menu' ?
+    <div>
     <div className='selectMenu'> 
     SELECT YOUR MENU
     </div>
     <Menu />
+    </div> :
+    (this.state.route==='modify_order' ?
+    <div>
+    <div className='selectMenu'> 
+    MODIFY YOUR ORDER
+    </div>
+    <ModifyOrder />
+    </div> : <div>
+    <div className='selectMenu'> 
+    KITCHEN AREA
+    </div>
+    <Kitchen />  
+    </div>)
+    }
     </div>
   );
  }
