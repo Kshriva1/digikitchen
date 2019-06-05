@@ -1,6 +1,6 @@
 import React from 'react';
 import './Kitchen.css';
-import { Table,Form,FormGroup,Label,Input,Button } from 'reactstrap';
+import { Table,Button } from 'reactstrap';
 import ReactHTMLTableToExcel from 'react-html-table-to-excel';
 
 class Kitchen extends React.Component {

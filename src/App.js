@@ -82,19 +82,19 @@ class App extends React.Component {
     {this.state.route==='menu' ?
     <div>
     <div className='selectMenu'> 
-    SELECT YOUR MENU
+    WELCOME KUNDAN, SELECT YOUR MENU
     </div>
     <Menu />
     </div> :
     (this.state.route==='modify_order' ?
     <div>
     <div className='selectMenu'> 
-    MODIFY YOUR ORDER
+     WELCOME KUNDAN, MODIFY YOUR ORDER
     </div>
     <ModifyOrder />
     </div> : <div>
-    <div className='selectMenu'> 
-    KITCHEN AREA
+    <div className='selectMenu pl3'> 
+    KITCHEN AREA, ORDER FOR KUNDAN
     </div>
     <Kitchen />  
     </div>)}
@@ -121,7 +121,7 @@ class App extends React.Component {
     </div>
     </div>
      {this.state.route === 'register' ?
-      <div>Register</div> : <div>SignIn</div>
+      <div><Register onRouteChange={this.onRouteChange} /></div> : <div><SignIn onRouteChange={this.onRouteChange} /></div>
      }
      </div>
       }
